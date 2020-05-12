@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+
+<script language="javascript">
+
+
+    function adicao() {
+        calc.resul.value = (calc.v1.value*1)+(calc.v2.value*1);
+    }
+
+    function subtracao() {
+        calc.resul.value = (calc.v1.value)-(calc.v2.value);
+    }
+
+    function multiplicacao() {
+        calc.resul.value = (calc.v1.value)*(calc.v2.value);
+    }
+
+    function divisao() {
+        calc.resul.value = (calc.v1.value)/(calc.v2.value);
+    }
+</script>
+
+<body>
+<form name="calc">
+
+            Valor 1:<input name="v1" size="5"><br>
+
+            Valor 2:<input name="v2" size="5">
+
+
+                    <input type="button" onClick="adicao()" value=" Somar ">
+                    <input type="button" onClick="subtracao()" value=" Subtrair">
+
+                    <input type="button" onClick="multiplicacao()" value=" Multiplicar ">
+                    <input type="button" onClick="divisao()" value=" Dividir ">
+
+            Resultado:<input type="text" name="resul" size="5" readonly>
+
+
+</form>
+</body>
+</html>
